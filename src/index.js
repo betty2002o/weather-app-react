@@ -2,12 +2,13 @@ import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
 import App from "./App";
+import Credit from "./Credit";
 import reportWebVitals from "./reportWebVitals";
-import DisplayCurrentTime from "./DisplayCurrentTime";
 
 ReactDOM.render(
   <React.StrictMode>
     <App />
+    <Credit />
   </React.StrictMode>,
   document.getElementById("root")
 );
