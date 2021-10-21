@@ -32,9 +32,9 @@ function DisplayCurrentTime() {
   let currentTimeAM = `${months[month]} ${dates} ${days[day]}, 0${hour}:${minute} AM`;
 
   if (hour >= 13) {
-    return <p>{currentTimePM}</p>;
+    return <div>{currentTimePM}</div>;
   } else {
-    return <p>{currentTimeAM}</p>;
+    return <div>{currentTimeAM}</div>;
   }
 }
 

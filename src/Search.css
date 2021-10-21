@@ -1,0 +1,53 @@
+.App {
+  text-align: center;
+  margin: 15px auto;
+  max-width: 600px;
+  border: 1px rgba(143, 210, 219, 0.664) solid;
+  border-radius: 20px;
+  color: rgba(0, 0, 0, 0.568);
+}
+
+.city-Name {
+  margin-top: 10px;
+}
+
+.form {
+  padding-bottom: 10px;
+  margin-top: 5px;
+}
+
+#searchInput {
+  height: 25px;
+  margin-right: 10px;
+}
+
+.buttons {
+  background: #b3dbff;
+  border: #b3beff7a 1px solid;
+  border-radius: 10px;
+  box-shadow: 1px 2px 2px black;
+  margin: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-weight: 170px;
+}
+
+.info-right {
+  line-height: 40px;
+}
+
+li {
+  list-style: none;
+}
+
+.temperature {
+  font-size: 35px;
+  color: black;
+  font-weight: 150px;
+}
+
+.unit {
+  font-size: 20px;
+  font-weight: normal;
+  color: rgba(0, 0, 0, 0.568);
+}
