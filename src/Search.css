@@ -31,23 +31,3 @@
   cursor: pointer;
   font-weight: 170px;
 }
-
-.info-right {
-  line-height: 40px;
-}
-
-li {
-  list-style: none;
-}
-
-.temperature {
-  font-size: 35px;
-  color: black;
-  font-weight: 150px;
-}
-
-.unit {
-  font-size: 20px;
-  font-weight: normal;
-  color: rgba(0, 0, 0, 0.568);
-}
