@@ -1,5 +1,6 @@
 import React from "react";
 import WeatherIcon from "./WeatherIcon";
+import WeatherConvert from "./WeatherConvert";
 import "./Displayweather.css";
 
 function Displayweather(props) {
@@ -8,10 +9,8 @@ function Displayweather(props) {
       <div className="row">
         <div className="col">
           <WeatherIcon icon={props.data.icon} alt={props.data.description} />
-          <span className="temperature">
-            {Math.round(props.data.temperature)}{" "}
-            <sup className="unit">°C | F</sup>
-          </span>
+          <WeatherConvert celsius={props.data.temperature} />
+
           <div className="text-capitalize description">
             {props.data.description}
           </div>
