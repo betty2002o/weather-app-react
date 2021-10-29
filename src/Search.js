@@ -43,6 +43,7 @@ function Search() {
       coord: response.data.coord,
     });
   }
+  console.log(weatherData);
 
   let form = (
     <div className="form">
@@ -61,7 +62,6 @@ function Search() {
       </form>
     </div>
   );
-
   if (loaded) {
     return (
       <div className="App">
@@ -69,7 +69,6 @@ function Search() {
         <DisplayCurrentTime />
         {form}
         <Displayweather data={weatherData} />
-        <DisplayDailyForecast coord={weatherData.coord} />
       </div>
     );
   } else {
