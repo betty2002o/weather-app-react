@@ -3,6 +3,7 @@ import axios from "axios";
 import "./Search.css";
 import DisplayCurrentTime from "./DisplayCurrentTime";
 import Displayweather from "./Displayweather";
+import DisplayDailyForecast from "./DisplayDailyForecast";
 function Search() {
   let [loaded, setLoaded] = useState(false);
   let [city, setCity] = useState(null);
@@ -39,6 +40,7 @@ function Search() {
       humidity: response.data.main.humidity,
       icon: response.data.weather[0].icon,
       description: response.data.weather[0].description,
+      coord: response.data.coord,
     });
   }
 
@@ -67,6 +69,7 @@ function Search() {
         <DisplayCurrentTime />
         {form}
         <Displayweather data={weatherData} />
+        <DisplayDailyForecast coord={weatherData.coord} />
       </div>
     );
   } else {

@@ -8,7 +8,11 @@ function Displayweather(props) {
     <div className="container">
       <div className="row">
         <div className="col">
-          <WeatherIcon icon={props.data.icon} alt={props.data.description} />
+          <WeatherIcon
+            icon={props.data.icon}
+            alt={props.data.description}
+            size="60%"
+          />
           <WeatherConvert celsius={props.data.temperature} />
 
           <div className="text-capitalize description">

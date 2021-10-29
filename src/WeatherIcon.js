@@ -25,7 +25,14 @@ function WeatherIcon(props) {
   let icon = iconMapping[props.icon];
   let iconurl = `https://basmilius.github.io/weather-icons/production/fill/all/${icon}.svg`;
 
-  return <img src={iconurl} alt={props.alt} className="float-left" />;
+  return (
+    <img
+      src={iconurl}
+      alt={props.alt}
+      className="float-left"
+      width={props.size}
+    />
+  );
 }
 
 export default WeatherIcon;
