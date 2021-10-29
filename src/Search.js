@@ -69,6 +69,7 @@ function Search() {
         <DisplayCurrentTime />
         {form}
         <Displayweather data={weatherData} />
+        <DisplayDailyForecast coord={weatherData.coord} />
       </div>
     );
   } else {
