@@ -11,7 +11,7 @@ function Displayweather(props) {
           <WeatherIcon
             icon={props.data.icon}
             alt={props.data.description}
-            size="60%"
+            size="50%"
           />
           <WeatherConvert celsius={props.data.temperature} />
 

@@ -4,6 +4,7 @@ import "./Search.css";
 import DisplayCurrentTime from "./DisplayCurrentTime";
 import Displayweather from "./Displayweather";
 import DisplayDailyForecast from "./DisplayDailyForecast";
+
 function Search(props) {
   let [loaded, setLoaded] = useState(false);
   let [city, setCity] = useState(props.defaultCity);
@@ -11,8 +12,6 @@ function Search(props) {
   const apiKey = "d644b9988fe5d63076ea48bfe2d4dc1b";
 
   function fetchData(response) {
-    setLoaded(true);
-
     setWeatherData({
       name: response.data.name,
       temperature: response.data.main.temp,
@@ -22,6 +21,7 @@ function Search(props) {
       description: response.data.weather[0].description,
       coordinates: response.data.coord,
     });
+    setLoaded(true);
   }
 
   function HandleSearch(event) {

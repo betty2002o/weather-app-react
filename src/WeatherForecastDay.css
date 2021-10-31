@@ -1,10 +1,14 @@
+.DisplayDailyForecast {
+  margin-top: 20px;
+}
+
 .dailyTemp {
   font-size: 15px;
-  word-spacing: 5px;
   font-weight: 700px;
   margin-bottom: 20px;
 }
 
 .dailyMax {
   color: black;
+  margin-right: 7px;
 }

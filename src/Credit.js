@@ -10,9 +10,9 @@ function Credit() {
         target="_blank"
         rel="noreferrer"
       >
-        Open-source code
+        Open-sourced
       </a>
-      , by Betty Chiang
+      &nbsp;by Betty Chiang
     </p>
   );
 }

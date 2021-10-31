@@ -21,7 +21,7 @@ function WeatherForecastDay(props) {
           <div className="dailyDay">{day()}</div>
           <WeatherIcon
             icon={props.data.weather[0].icon}
-            size="10%"
+            size="50%"
             alt={props.data.weather[0].description}
           />
         </div>
