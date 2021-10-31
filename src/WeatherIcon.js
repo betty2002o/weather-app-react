@@ -1,5 +1,4 @@
 import React from "react";
-import "./WeatherIcon.css";
 function WeatherIcon(props) {
   const iconMapping = {
     "01d": "clear-day",
