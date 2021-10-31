@@ -5,7 +5,7 @@ import Credit from "./Credit";
 function App() {
   return (
     <div>
-      <Search />
+      <Search defaultCity="Vancouver" />
       <Credit />
     </div>
   );
