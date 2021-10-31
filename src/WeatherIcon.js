@@ -1,4 +1,5 @@
 import React from "react";
+
 function WeatherIcon(props) {
   const iconMapping = {
     "01d": "clear-day",

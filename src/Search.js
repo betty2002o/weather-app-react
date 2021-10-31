@@ -76,7 +76,7 @@ function Search(props) {
       </div>
     );
   } else {
-    Search();
+    searchCity();
     return "Loading...";
   }
 }
