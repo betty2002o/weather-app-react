@@ -10,7 +10,7 @@ function Credit() {
         target="_blank"
         rel="noreferrer"
       >
-        Open-sourced
+        Open-sourced on Github
       </a>
       &nbsp;by Betty Chiang
     </p>
